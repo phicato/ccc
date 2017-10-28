@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ccc</string>
+    <string name="hello">Hello man</string>
+    <string name="login_button">LOG IN</string>
+    <string name="name">Username</string>
+    <string name="login_mess">Login in to see the magic</string>
+    <string name="PhiCato">PhiCato Technology</string>
+    <string name="whats_your_name">What\'s your name?</string>
+</resources>
