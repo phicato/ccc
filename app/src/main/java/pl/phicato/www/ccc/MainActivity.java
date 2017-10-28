@@ -1,5 +1,6 @@
 package pl.phicato.www.ccc;
 
+import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -28,5 +29,10 @@ public class MainActivity extends AppCompatActivity {
         String nameConverted = name.getText().toString();
 
         Toast.makeText(MainActivity.this, "Hello " + nameConverted, Toast.LENGTH_SHORT).show();
+    }
+
+    public void playFunction(View view){
+        MediaPlayer ring= MediaPlayer.create(MainActivity.this,R.raw.zakonczenie);
+        ring.start();
     }
 }
