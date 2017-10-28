@@ -6,5 +6,6 @@
     <string name="login_mess">Press button to play audio</string>
     <string name="PhiCato">PhiCato Technology</string>
     <string name="whats_your_name">What\'s your name?</string>
-    <string name="play_button">PLAY</string>
+    <string name="play_button">PLAY AUDIO</string>
+    <string name="change_image">IMAGE CHANGE</string>
 </resources>

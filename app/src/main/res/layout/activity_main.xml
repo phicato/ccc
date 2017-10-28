@@ -14,7 +14,7 @@
         android:layout_marginStart="64dp"
         android:layout_marginTop="8dp"
         android:text="@string/PhiCato"
-        android:textSize="10sp"
+        android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.693"
         app:layout_constraintStart_toStartOf="parent"
@@ -42,30 +42,15 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="85dp"
         android:layout_marginStart="84dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="16dp"
         android:ems="10"
         android:hint="@string/name"
         android:inputType="textPersonName"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nameID" />
-
-    <EditText
-        android:id="@+id/passwordID"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="84dp"
-        android:layout_marginStart="85dp"
-        android:layout_marginTop="12dp"
-        android:ems="10"
-        android:inputType="textPassword"
-        android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/usernameID" />
+        app:layout_constraintTop_toBottomOf="@+id/nameID" />
 
     <Button
         android:id="@+id/buttonID"
@@ -73,26 +58,13 @@
         android:layout_height="48dp"
         android:layout_marginEnd="148dp"
         android:layout_marginStart="148dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="14dp"
         android:onClick="loginFunction"
         android:text="@string/login_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/passwordID" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="162dp"
-        android:layout_marginStart="162dp"
-        android:layout_marginTop="8dp"
-        android:text="@string/login_mess"
-        android:textSize="8sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonID" />
+        app:layout_constraintTop_toBottomOf="@+id/usernameID" />
 
     <Button
         android:id="@+id/button2"
@@ -100,11 +72,36 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="148dp"
         android:layout_marginStart="148dp"
-        android:layout_marginTop="8dp"
         android:onClick="playFunction"
         android:text="@string/play_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonID" />
+
+    <ImageView
+        android:id="@+id/image1ID"
+        android:layout_width="197dp"
+        android:layout_height="176dp"
+        android:layout_marginEnd="93dp"
+        android:layout_marginStart="94dp"
+        android:layout_marginTop="316dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/phi_logo" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="128dp"
+        android:layout_marginStart="129dp"
+        android:layout_marginTop="9dp"
+        android:onClick="imageChange"
+        android:text="@string/change_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
 
 </android.support.constraint.ConstraintLayout>

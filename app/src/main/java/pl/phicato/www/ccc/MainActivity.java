@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -21,10 +22,6 @@ public class MainActivity extends AppCompatActivity {
         String usernameConverted = username.getText().toString();
         Log.i("username", usernameConverted);
 
-        EditText password = (EditText) findViewById(R.id.passwordID);
-        String passwordConverted = password.getText().toString();
-        Log.i("password", passwordConverted);
-
         EditText name = (EditText) findViewById(R.id.nameID);
         String nameConverted = name.getText().toString();
 
@@ -32,7 +29,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void playFunction(View view){
-        MediaPlayer ring= MediaPlayer.create(MainActivity.this,R.raw.zakonczenie);
+        MediaPlayer ring = MediaPlayer.create(MainActivity.this,R.raw.zakonczenie);
         ring.start();
     }
+
+    public void imageChange(View view){
+        ImageView imageView = (ImageView) findViewById(R.id.image1ID);
+        imageView.setImageResource(R.drawable.pszczolka100);
+    }
+
 }
